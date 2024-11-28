@@ -17,6 +17,7 @@ export default defineConfig({
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom', 'react-router-dom', '@reduxjs/toolkit', 'react-redux'],
+          firebase: ['firebase/app', 'firebase/auth'],
         },
         assetFileNames: (assetInfo) => {
           const info = assetInfo.name.split('.');
