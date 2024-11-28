@@ -3,7 +3,7 @@ import { Handler } from '@netlify/functions';
 const clientId = process.env.PINTEREST_CLIENT_ID || '1507772';
 const clientSecret = process.env.PINTEREST_CLIENT_SECRET || '12e86e7dd050a39888c5e753908e80fae94f7367';
 const redirectUri = process.env.NODE_ENV === 'development' 
-  ? 'http://localhost:5173/callback'
+  ? 'https://proba2-amber.vercel.app/callback'
   : `https://${process.env.URL}/callback`;
 
 // Using sandbox URL
