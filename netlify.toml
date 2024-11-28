@@ -31,7 +31,7 @@
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
-    Content-Security-Policy = "default-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.netlify.app netlify.app *.pinterest.com *.googleapis.com; img-src 'self' data: blob: https:; connect-src 'self' data: *.netlify.app netlify.app *.pinterest.com *.firebaseio.com *.googleapis.com identitytoolkit.googleapis.com"
+    Content-Security-Policy = "default-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.netlify.app netlify.app *.pinterest.com *.googleapis.com identitytoolkit.googleapis.com; img-src 'self' data: blob: https:; connect-src 'self' data: *.netlify.app netlify.app *.pinterest.com *.firebaseio.com *.googleapis.com identitytoolkit.googleapis.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.googleapis.com; frame-src *.googleapis.com"
 
 [[headers]]
   for = "/assets/*"
